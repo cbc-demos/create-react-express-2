@@ -1,0 +1,25 @@
+{
+  "name": "create-react-express-2",
+  "version": "0.0.0",
+  "description": "MERN Boilerplate for coding boot camp.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbc-demos/create-react-express-2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cbc-demos/create-react-express-2/issues"
+  },
+  "homepage": "https://github.com/cbc-demos/create-react-express-2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+
+  }
+}

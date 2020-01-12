@@ -1,10 +1,17 @@
 {
   "name": "create-react-express-2",
   "version": "0.0.0",
-  "description": "MERN Boilerplate for coding boot camp.",
+  "description": "MERN Demo",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "concurrently -k \"nodemon --ignore client/* server.js\" \"npm run client\"",
+    "start:prod": "node server.js",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,9 +24,11 @@
   },
   "homepage": "https://github.com/cbc-demos/create-react-express-2#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
-
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
   }
 }

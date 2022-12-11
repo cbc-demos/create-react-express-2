@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/cbc-demos/create-react-express-2#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "if-env": "^1.0.4"
   },
   "devDependencies": {
